@@ -2,6 +2,64 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  text-align: justify;
+}
+
+/* underline header*/
+header a {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+}
+
+header a:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+header a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.about-us img {
+  border-radius: 70%;
+}
+
+.about-us p,
+.prayer-section p,
+.article p {
+  text-align: justify;
+  color: #0e162b;
+}
+
+.quran {
+  height: 700px;
+}
+
+.article {
+  transition: 2s;
+  transition-timing-function: ease-in;
+}
+
+.article-top:hover {
+  border-bottom: 1px solid #0e162b;
+  transition: 0.3s ease 0s, left 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.article .card {
+  border-radius: 12px;
+}
+
+.carousel-item .card {
+  border: none;
+  background-color: #4ac550;
 }
 
 #app {
@@ -13,7 +71,7 @@ body {
   font-size: 1.1em;
   margin-bottom: 0px;
   padding: 0.3em;
-  background: #4ac550;
+  background: #0e162b;
   color: white;
   text-align: center;
 }
@@ -37,7 +95,23 @@ body {
 }
 
 #app table tr:hover {
-  background-color: #4ac550;
+  background: #0e162b;
   color: white;
   cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0e162b;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #0e162b;
+  color: white;
 }
