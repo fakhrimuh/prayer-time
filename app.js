@@ -10,24 +10,52 @@ function prayerTime(latitude, longitude) {
     .then(function (response) {
       let date = new Date();
       let today = date.getDate() - 1;
-      let data = response.data[0].timings;
 
-      let app = document.getElementById("app");
-      let table = document.createElement("table");
-      let tableTbody = document.createElement("tbody");
-
-      for (i in data) {
-        let row = tableTbody.insertRow();
-        let name = row.insertCell(0);
-        let time = row.insertCell(1);
-
-        name.innerHTML = i;
-        time.innerHTML = data[i];
-
-        tableTbody.appendChild(row);
+      function fajr() {
+        let fajr = document.getElementById("fajr");
+        let fajrdata = response.data[0].timings.Fajr;
+        let fajrTime = document.createElement("h3");
+        fajr.appendChild(fajrTime);
+        fajrTime.innerHTML = fajrdata;
       }
-      table.appendChild(tableTbody);
-      app.appendChild(table);
+
+      function dhuhr() {
+        let dhuhr = document.getElementById("dhuhr");
+        let dhuhrdata = response.data[0].timings.Dhuhr;
+        let dhuhrTime = document.createElement("h3");
+        dhuhr.appendChild(dhuhrTime);
+        dhuhrTime.innerHTML = dhuhrdata;
+      }
+
+      function asr() {
+        let Asr = document.getElementById("asr");
+        let Asrdata = response.data[0].timings.Asr;
+        let asrTime = document.createElement("h3");
+        Asr.appendChild(asrTime);
+        asrTime.innerHTML = Asrdata;
+      }
+
+      function maghrib() {
+        let maghrib = document.getElementById("maghrib");
+        let maghribdata = response.data[0].timings.Maghrib;
+        let maghribTime = document.createElement("h3");
+        maghrib.appendChild(maghribTime);
+        maghribTime.innerHTML = maghribdata;
+      }
+
+      function isha() {
+        let isha = document.getElementById("isha");
+        let ishadata = response.data[0].timings.Isha;
+        let ishaTime = document.createElement("h3");
+        isha.appendChild(ishaTime);
+        ishaTime.innerHTML = ishadata;
+      }
+
+      fajr();
+      dhuhr();
+      asr();
+      maghrib();
+      isha();
     });
 }
 
@@ -52,14 +80,4 @@ function userLocation() {
   }
 }
 
-function index() {
-  let app = document.getElementById("app");
-  let h3 = document.createElement("h3");
-
-  h3.innerHTML = "Prayer Times";
-  app.appendChild(h3);
-
-  userLocation();
-}
-
-index();
+userLocation();

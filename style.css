@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   text-align: justify;
@@ -39,7 +39,13 @@ header a:hover:after {
 }
 
 .quran {
-  height: 700px;
+  background-size: cover;
+}
+
+.prayer-section .card:hover {
+  color: white;
+  background-color: #3b5998;
+  cursor: pointer;
 }
 
 .article {
@@ -47,19 +53,49 @@ header a:hover:after {
   transition-timing-function: ease-in;
 }
 
-.article-top:hover {
-  border-bottom: 1px solid #0e162b;
-  transition: 0.3s ease 0s, left 0.3s ease 0s;
+.recent-article img {
+  height: 50%;
   cursor: pointer;
 }
 
-.article .card {
-  border-radius: 12px;
+.recent-article img:hover {
+  height: 55%;
+  transition: 2s;
+}
+
+.arrow {
+  color: #0e162b;
+  margin: 1px 0;
+  cursor: pointer;
+}
+
+.arrow::after {
+  display: inline-block;
+  padding-left: 8px;
+  content: "\0279E";
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
+  -ms-transition: transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+.arrow:hover {
+  color: #0e162b;
+}
+
+.arrow:hover::after {
+  -webkit-transform: translateX(4px);
+  -moz-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  -o-transform: translateX(4px);
+  transform: translateX(4px);
 }
 
 .carousel-item .card {
   border: none;
-  background-color: #4ac550;
+  background-color: #0e162b;
+  color: white;
 }
 
 #app {
@@ -100,6 +136,27 @@ header a:hover:after {
   cursor: pointer;
 }
 
+.icon {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.fa {
+  cursor: pointer;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-instagram:hover {
+  color: #833ab4;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -108,7 +165,6 @@ header a:hover:after {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #0e162b;
-  border-radius: 10px;
 }
 
 footer {

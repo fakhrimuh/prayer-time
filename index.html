@@ -11,6 +11,7 @@
         type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 </head>
 
 <body>
@@ -19,33 +20,35 @@
             class="w-100 quran" alt="Quran-image">
         <div class="card-img-overlay">
             <!--Heading on image-->
-            <header
-                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
-                <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-white text-decoration-none">
-                    LOGO
-                </a>
-
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
-                    <li><a href="#about-us" class="nav-link px-2 text-white">About Us</a></li>
-                    <li><a href="#prayer-time" class="nav-link px-2 text-white">Praying Time</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">News</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Events</a></li>
-                </ul>
-
-                <div class="col-md-3 text-end">
-                    <button type="button" class="btn btn-primary">Donate</button>
-                </div>
-            </header>
-
-            <!--Quran Ayat-->
             <div class="container">
+                <header
+                    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+                    <p href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-white text-decoration-none">
+                        LOGO
+                    </p>
+
+                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+                        <li><a href="#about-us" class="nav-link px-2 text-white">About Us</a></li>
+                        <li><a href="#prayer-time" class="nav-link px-2 text-white">Praying Time</a></li>
+                        <li><a href="#recent-article" class="nav-link px-2 text-white">Article</a></li>
+                        <li><a href="#events" class="nav-link px-2 text-white">Events</a></li>
+                    </ul>
+
+                    <div class="col-md-3 text-end">
+                        <button class=" btn btn-outline-light"> Donate </button>
+                    </div>
+                </header>
+
+                <!--Quran Ayat-->
+
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi libero,
+                <p class="card-text w-50 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi libero,
                     provident, minima ipsam, dolorem nesciunt aspernatur quas molestias consequatur adipisci officia.
                     Reprehenderit dolore, voluptatibus porro quod ipsam alias cum nihil!</p>
                 <p class="card-text">Last updated 3 mins ago</p>
-                <button type="button" class="btn btn-primary">Donate</button>
+                <button class=" btn btn-outline-light"> Donate </button>
             </div>
         </div>
     </div>
@@ -65,7 +68,73 @@
         </div>
         <div class="prayer-section" id="prayer-time">
             <h3 class="my-4">Prayer Times</h3>
-            <div class="row">
+            <div class="fs-4">
+                <p>Establish Prayer from the declining of the sun to the darkness of the night; and hold fast to the
+                    recitation of the Qur'an at dawn, for the recitation of the Qur'an at dawn is witnessed. [17:78]
+                </p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-5">
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <h5 class="card-title">Fajr</h5>
+                        <div class="card-body" id="fajr">
+                            <!-- Praying Time -->
+
+                        </div>
+                        <div class="card-footer">
+                            2 Rakaat
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <h5 class="card-title">Dhuhr</h5>
+                        <div class="card-body" id="dhuhr">
+                            <!-- Praying Time -->
+                        </div>
+                        <div class="card-footer">
+                            4 Rakaat
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <h5 class="card-title">Asr</h5>
+                        <div class="card-body asr" id="asr">
+                            <!-- Praying Time -->
+
+                        </div>
+                        <div class="card-footer">
+                            4 Rakaat
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <h5 class="card-title">Magrib</h5>
+                        <div class="card-body" id="maghrib">
+                            <!-- Praying Time -->
+
+                        </div>
+                        <div class="card-footer">
+                            3 Rakaat
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <h5 class="card-title">Isha</h5>
+                        <div class="card-body" id="isha">
+                            <!-- Praying Time -->
+
+                        </div>
+                        <div class="card-footer">
+                            4 Rakaat
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row">
                 <div class="col fs-4">
                     <p>Establish Prayer from the declining of the sun to the darkness of the night; and hold fast to the
                         recitation of the Qur'an at dawn, for the recitation of the Qur'an at dawn is witnessed. [17:78]
@@ -74,144 +143,177 @@
                 <div id="app" class="col">
 
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="recent-article">
-            <div class="row my-4 article-top">
+            <div class="row my-4 article-top" id="recent-article">
                 <h3 class="col">Recent Article</h3>
-                <p class="col text-end">Read More</p>
+                <p class="col text-end arrow">More Article</p>
             </div>
             <div class="row row-cols-1 row-cols-md-4 g-4 article">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="https://images.unsplash.com/photo-1551041777-ed277b8dd348?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
+                            class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to
-                                additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">Milad an-Nabi</h5>
+                            <p class="card-text">Muslims celebrate this occasion with great rejoicing. Muslims gather to
+                                narrate the stories of the Prophet's birth, childhood, his character, manhood and his
+                                mission.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
                         <img src="https://images.unsplash.com/photo-1621697919947-663d48b244be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=454&q=80"
-                            class="card-img-top h-50" alt="...">
+                            class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-                                nobis
-                                minus accusamus vero deserunt alias dolores commodi ullam ex. Vitae veniam dolores
-                                repellendus nisi quas, et quaerat explicabo aspernatur esse!</p>
+                            <h5 class="card-title">Lailat al-Qadr</h5>
+                            <p class="card-text">The night in which the prophet Mohammed received the first revelation
+                                from God. The Night of Power is one of the odd-numbered nights of the last ten days of
+                                Ramadan. A portion of this night is spent reading the Qur'an and making special prayers.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="https://images.unsplash.com/photo-1571620874594-d6df8b47f708?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+                            class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to
-                                additional content.</p>
+                            <h5 class="card-title">Hajj</h5>
+                            <p class="card-text"> A religious duty that must be carried out at least once in their
+                                lifetime by every able-bodied Muslim who can afford to do so. The Hajj is a
+                                demonstration of the solidarity of the Muslim people, and their submission to Allah.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="https://images.unsplash.com/photo-1574246604907-db69e30ddb97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=373&q=80"
+                            class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to
-                                additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">Umrah</h5>
+                            <p class="card-text">In Arabic Umrah means “to visit a populated place”. It is sometimes
+                                called the 'minor pilgrimage', the Hajj being the 'major' pilgrimage and which is
+                                compulsory for every able-bodied Muslim who can afford it. The Umrah is not compulsory
+                                but highly recommended.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="event my-4">
-            <div class="row my-4 border-bottom">
+
+        <div class="event my-4" id="events">
+            <div class="row my-4 event-top">
                 <h3 class="col">Event</h3>
-                <p class="col text-end">Read More</p>
+                <p class="col text-end arrow">More Event</p>
             </div>
-            <!--Slide next and previous-->
-            <div id="carouselArticle" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselEvent" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselEvent" data-bs-slide-to="0"></li>
+                    <li data-bs-target="#carouselEvent" data-bs-slide-to="1" class="active"></li>
+                    <li data-bs-target="#carouselEvent" data-bs-slide-to="2"></li>
+                </ol>
                 <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="card borderless border-0">
+                            <div class="row p-0 card-body">
+                                <div class="col-lg-7 col-md-7 col-sm-12 pr-0">
+                                    <div class="p-lg-5 p-4">
+                                        <div class="event-description" style="height: 240px;">
+                                            <h3 class="card-title">Eid ul-Fitr</h3>
+                                            <p class="font-weight-500 mb-4">End of Muslim Month of Fasting (Ramadan). A
+                                                celebratory meal on the evening of this day. It is a three day
+                                                celebration and many will attend early morning prayers, affecting
+                                                attendance</p>
+                                            <table class="font-weight-500">
+                                                <tr>
+                                                    <td><i class="fa fa-calendar fa-lg me-2"></i></td>
+                                                    <td> <small> 3 December 2045 </small></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-map-marker fa-lg me-3"></i></td>
+                                                    <td><small> Al Mubarrak, Indonesia </small></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <hr>
+                                        <button class=" btn btn-outline-light"> Register Now </button>
+                                    </div>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1598723106396-f89827f6aa1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"
+                                    class="col-md-5" style="display: block;">
+                            </div>
+                        </div>
+                    </div>
                     <div class="carousel-item active">
-                        <div class="card h-100">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="https://images.unsplash.com/photo-1575751639353-e292e76daca3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                                        class="
-                            img-fluid rounded-start" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to
-                                            additional content. This content is a little bit longer.</p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
-                                        </p>
+                        <div class="card borderless border-0">
+                            <div class="row p-0 card-body">
+                                <div class="col-lg-7 col-md-7 col-sm-12 pr-0">
+                                    <div class="p-lg-5 p-4">
+                                        <div class="event-description" style="height: 240px;">
+                                            <h3 class="card-title">Ramadan</h3>
+                                            <p class="font-weight-500 mb-4">Muslim Month of Fasting. Muslims fast from
+                                                sunrise to sunset with the last ten days reserved for possible all night
+                                                prayer vigils. Attendance should not be affected</p>
+                                            <table class="font-weight-500">
+                                                <tr>
+                                                    <td><i class="fa fa-calendar fa-lg me-2"></i></td>
+                                                    <td> <small> 3 December 2045 </small></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-map-marker fa-lg me-3"></i></td>
+                                                    <td><small> Al Mubarrak, Indonesia </small></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <hr>
+                                        <button class=" btn btn-outline-light">
+                                            Register Now
+                                        </button>
                                     </div>
                                 </div>
+                                <img src="https://images.unsplash.com/photo-1563300365-9c77e472e7a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                    class=" col-md-5" style="display: block;">
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card h-100">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="https://images.unsplash.com/photo-1598723106396-f89827f6aa1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80"
-                                        class="
-                            img-fluid rounded-start" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to
-                                            additional content. This content is a little bit longer.</p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
-                                        </p>
+                        <div class="card borderless border-0">
+                            <div class="row p-0 card-body">
+                                <div class="col-lg-7 col-md-7 col-sm-12 pr-0">
+                                    <div class="p-lg-5 p-4">
+                                        <div class="event-description" style="height: 240px;">
+                                            <h3 class="card-title">Eid ul-Adha</h3>
+                                            <p class="font-weight-500 mb-4">Festival of Sacrifice. This is a four day
+                                                holiday marking the sacrifice of Abraham. It also highlights the end of
+                                                the annual pilgrimage to Mecca, called Hajj. Prayer are held at the
+                                                mosque followed by an evening feast.</p>
+                                            <table class="font-weight-500">
+                                                <tr>
+                                                    <td><i class="fa fa-calendar fa-lg me-2"></i></td>
+                                                    <td> <small> 3 December 2045 </small></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-map-marker fa-lg me-3"></i></td>
+                                                    <td><small> Al Mubarrak, Indonesia </small></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <hr>
+                                        <button class=" btn btn-outline-light">
+                                            Register Now
+                                        </button>
                                     </div>
                                 </div>
+                                <img src="https://images.unsplash.com/photo-1575751639353-e292e76daca3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" "
+                                 class=" col-md-5" style="display: block;">
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="card h-100">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="https://images.unsplash.com/photo-1563300365-9c77e472e7a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                                        class="
-                            img-fluid rounded-start" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to
-                                            additional content. This content is a little bit longer.</p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselArticle"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselArticle"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
     </div>
@@ -222,13 +324,15 @@
                     <h5>Section</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        <li class="nav-item mb-2"><a href="#about-us" class="nav-link p-0 text-muted">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="#prayer-time" class="nav-link p-0 text-muted">Praying
+                                Time</a></li>
+                        <li class="nav-item mb-2"><a href="#recent-article" class="nav-link p-0 text-muted">Article</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#events" class="nav-link p-0 text-muted">Event</a></li>
                     </ul>
                 </div>
-                <div class="p-2 bd-highlight ">
+                <!-- <div class="p-2 bd-highlight ">
                     <h5>Section</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
@@ -237,35 +341,27 @@
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
                     </ul>
-                </div>
+                </div> -->
                 <div class="ms-auto p-2 bd-highlight">
                     <form>
-                        <h5>Keep in Touch With Us</h5>
-                        <p>Get our news letter to your email</p>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of whats new and exciting from us.</p>
                         <div class="d-flex w-100 gap-2">
                             <label for="newsletter1" class="visually-hidden">Email address</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Recipient's username"
-                                    aria-label="Recipient's username">
-                                <button class="btn btn-info" type="button">Button</button>
-                            </div>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-outline-light" type="button">Subscribe</button>
                         </div>
                     </form>
                 </div>
             </div>
 
             <div class="d-flex justify-content-between border-top">
+
                 <p>© 2021 Company, Inc. All rights reserved.</p>
                 <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#twitter"></use>
-                            </svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#instagram"></use>
-                            </svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#facebook"></use>
-                            </svg></a></li>
+                    <li class="ms-3"><i class="fa fa-twitter fa-lg"></i></li>
+                    <li class="ms-3"><i class="fa fa-instagram fa-lg"></i></li>
+                    <li class="ms-3"><i class="fa fa-facebook fa-lg"></i></li>
                 </ul>
             </div>
         </div>
